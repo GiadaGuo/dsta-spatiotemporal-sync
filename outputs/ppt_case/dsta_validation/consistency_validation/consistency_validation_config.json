@@ -1,0 +1,69 @@
+{
+  "seed": 20261023,
+  "source_files": [
+    "data/processed/world_tracks.parquet",
+    "data/processed/frame_pairs.parquet",
+    "outputs/reports/spatial_matches.csv"
+  ],
+  "candidate_identity_status": "candidate one-to-one associations within official frame pairs; not verified cross-source identity labels",
+  "split": {
+    "unit": "official_frame_pair",
+    "chronological": true,
+    "calibration_fraction": 0.4,
+    "calibration_rows": 358,
+    "test_rows": 457
+  },
+  "calibration": {
+    "normal_only": true,
+    "quantile": 0.99,
+    "model": {
+      "features": {
+        "time_residual_ms": {
+          "median": 10.479,
+          "scale": 2.9199806999999987,
+          "threshold": 16.992,
+          "n": 358
+        },
+        "space_residual_m": {
+          "median": 1.012218347832535,
+          "scale": 0.3997821876714176,
+          "threshold": 2.0285693152339386,
+          "n": 358
+        },
+        "trajectory_residual_m": {
+          "median": 0.45398603293694273,
+          "scale": 0.3796716222304778,
+          "threshold": 3.4896964385236693,
+          "n": 352
+        }
+      },
+      "quantile": 0.99,
+      "joint_threshold": 4.793172406918687
+    }
+  },
+  "perturbation_strengths": {
+    "low": {
+      "time_ms": 12.0,
+      "space_m": 0.8,
+      "trajectory_m": 0.8
+    },
+    "medium": {
+      "time_ms": 35.0,
+      "space_m": 2.0,
+      "trajectory_m": 2.0
+    },
+    "high": {
+      "time_ms": 70.0,
+      "space_m": 4.0,
+      "trajectory_m": 4.0
+    }
+  },
+  "labels": "synthetic anomaly labels on held-out test copies",
+  "test_labels_used_for_tuning": false,
+  "trajectory": {
+    "method": "causal constant-velocity prediction",
+    "same_source_sequence_track_only": true,
+    "max_history_gap_s": 0.35,
+    "missing_handling": "excluded per row; joint RMS normalized by available feature count"
+  }
+}

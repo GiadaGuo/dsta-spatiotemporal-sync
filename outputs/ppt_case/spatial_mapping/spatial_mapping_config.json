@@ -1,0 +1,48 @@
+{
+  "event_id": "EVT2_006",
+  "roi": [
+    3584.0,
+    2112.0,
+    3968.0,
+    2496.0
+  ],
+  "grid_budget_cells": 200,
+  "selection_split": "validation",
+  "reported_error_split": "held-out test",
+  "test_observations": 1235,
+  "coverage_rate_all_methods": 1.0,
+  "methods": [
+    {
+      "method": "Fixed Grid",
+      "configuration": "32m",
+      "n_cells": 144,
+      "mean_quantization_error_m": 12.404429856093255,
+      "p90_quantization_error_m": 17.020050106756596
+    },
+    {
+      "method": "Density Quadtree",
+      "configuration": "threshold=30",
+      "n_cells": 126,
+      "mean_quantization_error_m": 11.329202067257537,
+      "p90_quantization_error_m": 31.154969957504825
+    },
+    {
+      "method": "Quality + Optuna",
+      "configuration": "validation-selected",
+      "n_cells": 186,
+      "mean_quantization_error_m": 8.597108732029977,
+      "p90_quantization_error_m": 24.723445681650045
+    }
+  ],
+  "event_marker": {
+    "x": 3669.584406204919,
+    "y": 2313.2334750871073,
+    "meaning": "event member-state centroid; not a road or impact-area label"
+  },
+  "provenance": [
+    "outputs/reports/grid_comparison.csv",
+    "data/processed/optimized_grid_cells.csv",
+    "data/processed/splits/train.parquet",
+    "data/processed/splits/test.parquet"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "join_key": "sample_id",
+  "layers": {
+    "reference": "artifacts/reference_track.parquet",
+    "perturbed": "artifacts/missing_order_scenarios.parquet",
+    "restored": "restored_observations.parquet"
+  },
+  "later_fields": {
+    "quality_weight": "not_computed",
+    "consistency_label": "not_computed",
+    "consistency_score": "not_computed"
+  },
+  "cube_mapping": {
+    "x": [
+      "world_x",
+      "estimated_world_x"
+    ],
+    "y": [
+      "world_y",
+      "estimated_world_y"
+    ],
+    "t": "relative_time_s",
+    "quality_flags": [
+      "injected_missing",
+      "injected_out_of_order"
+    ]
+  }
+}

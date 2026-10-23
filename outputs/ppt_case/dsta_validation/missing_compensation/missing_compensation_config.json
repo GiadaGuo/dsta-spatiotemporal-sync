@@ -1,0 +1,45 @@
+{
+  "seed": 20261023,
+  "reference_key": {
+    "source": "vehicle-side",
+    "sequence_id": "0058",
+    "track_id": "023991",
+    "contiguous_segment": 5
+  },
+  "reference_points": 96,
+  "case_relation": "supplemental validation; EVT2_006 direct tracks were insufficient for multi-rate evaluation",
+  "split": {
+    "calibration_points": 20,
+    "test_points": 76
+  },
+  "missing_rates": [
+    0.1,
+    0.2,
+    0.3,
+    0.4
+  ],
+  "arrival_disorder": {
+    "rate": 0.22,
+    "max_shift_ms": 260.0
+  },
+  "improved": {
+    "reorder_basis": "event timestamp",
+    "buffer_ms": 300,
+    "interpolation": "two-sided linear constant-velocity",
+    "max_gap_s": 0.6
+  },
+  "shared_future_scenario": {
+    "spatial_noise_sigma_m": 0.65,
+    "quality_degradation_interval_s": [
+      4,
+      6
+    ],
+    "quality_factor": 0.35,
+    "status": "materialized but not evaluated this round"
+  },
+  "limitations": [
+    "Reference is the untouched real trajectory, not independent external ground truth.",
+    "Loss and arrival disorder are synthetic labels.",
+    "Results measure recovery against held-out real observations in this controlled scenario."
+  ]
+}

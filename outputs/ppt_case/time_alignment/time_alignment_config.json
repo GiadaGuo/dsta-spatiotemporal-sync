@@ -1,0 +1,40 @@
+{
+  "experiment": "adaptive_time_alignment",
+  "event_id": "EVT2_006",
+  "seed": 20261023,
+  "real_ground_truth": "DAIR-V2X-Seq official cooperative LiDAR frame pairs",
+  "case_windows": [
+    2,
+    6
+  ],
+  "case_window_seconds": 2,
+  "official_pairs": 101,
+  "synthetic_injection": {
+    "vehicle_clock_jitter_ms_sigma": 4.0,
+    "infrastructure_clock_jitter_ms_sigma": 7.0,
+    "vehicle_delay_lognormal_median_ms": 28,
+    "infrastructure_delay_lognormal_median_ms": 48,
+    "infrastructure_burst_fraction": [
+      0.38,
+      0.62
+    ],
+    "burst_extra_delay_ms": [
+      70,
+      145
+    ]
+  },
+  "baseline": {
+    "time_basis": "synthetic arrival time",
+    "fixed_window_ms": 50.0
+  },
+  "improved": {
+    "time_basis": "event time",
+    "calibration_pairs": 10,
+    "adaptive_window_formula": "clip(0.22*rolling_median_interval + 1.5*rolling_MAD_delay, 20, 80)"
+  },
+  "limitations": [
+    "Network delays and clock jitter are synthetic, not measured in DAIR.",
+    "Official frame association is used only as evaluation ground truth and initial offset calibration.",
+    "Results validate alignment robustness under this controlled perturbation, not deployment latency."
+  ]
+}

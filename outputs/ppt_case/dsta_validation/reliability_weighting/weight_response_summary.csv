@@ -1,0 +1,3 @@
+quality_degradation_flag,mean_weight_a,mean_weight_b,channel_b_availability
+False,0.62671272917561,0.37328727082438995,1.0
+True,0.9503811445854394,0.049618855414560604,0.8

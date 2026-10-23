@@ -1,0 +1,63 @@
+{
+  "scheme": "B",
+  "evaluation": "real trajectory reference with two controlled independent simulated channels",
+  "seeds": [
+    20261023,
+    20261024,
+    20261025,
+    20261026,
+    20261027,
+    20261028,
+    20261029,
+    20261030,
+    20261031,
+    20261032
+  ],
+  "reference": {
+    "path": "experiments/dsta_validation/shared_scenario/artifacts/reference_track.parquet",
+    "points": 96,
+    "calibration_points": 20,
+    "test_points": 76,
+    "used_by_weight_algorithm": false
+  },
+  "channels": {
+    "A": {
+      "sigma_m": 0.35
+    },
+    "B": {
+      "normal_sigma_m": 0.5,
+      "degraded_sigma_m": 3.0,
+      "degraded_bias_m": [
+        2.0,
+        -1.5
+      ],
+      "degraded_dropout_rate": 0.2,
+      "quality_signal": 0.35
+    }
+  },
+  "degraded_interval_s": [
+    4.0,
+    6.0
+  ],
+  "dynamic_weight": {
+    "ewma_alpha": 0.82,
+    "inputs": [
+      "past fused states",
+      "current channel observations",
+      "availability",
+      "current quality signal"
+    ],
+    "future_data_used": false,
+    "reference_used": false
+  },
+  "oracle": {
+    "included": true,
+    "deployable": false,
+    "uses_known_injected_variance": true
+  },
+  "limitations": [
+    "Channels are simulated, not real cross-source fusion.",
+    "Real reference is hidden from weighting but is not an independent survey-grade ground truth.",
+    "Conclusions apply only to the controlled noise configuration."
+  ]
+}
