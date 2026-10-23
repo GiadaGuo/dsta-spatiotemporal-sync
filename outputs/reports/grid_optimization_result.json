@@ -1,0 +1,28 @@
+{
+  "budget": 200,
+  "roi": [
+    3584.0,
+    2112.0,
+    3968.0,
+    2496.0
+  ],
+  "best_trial": 65,
+  "best_params": {
+    "w_density": 0.3866976306573792,
+    "w_motion": 0.19744943411830088,
+    "w_disagreement": 0.20433080496072725,
+    "split_threshold": 0.7649845057814341
+  },
+  "validation": {
+    "n_observations": 1050,
+    "covered_observations": 1050,
+    "coverage_rate": 1.0,
+    "n_cells": 186,
+    "occupied_cells": 73,
+    "mean_quantization_error_m": 8.160210609585269,
+    "median_quantization_error_m": 3.943659939104984,
+    "p90_quantization_error_m": 21.10863785845923,
+    "max_quantization_error_m": 42.667027776108654
+  },
+  "train_only_fit": true
+}

@@ -1,0 +1,10 @@
+{
+  "states": 830,
+  "eligible_states": 734,
+  "raw_anomaly_states": 59,
+  "ae_anomaly_states": 59,
+  "both_branch_states": 42,
+  "union_states": 76,
+  "candidate_events": 7,
+  "traffic_pattern_candidate_events": 1
+}

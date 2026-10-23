@@ -4,6 +4,9 @@ __pycache__/
 .DS_Store
 
 data/raw/
-outputs/
+outputs/figures/
+outputs/models/
+outputs/ppt_case/
+
 
 *.pyc

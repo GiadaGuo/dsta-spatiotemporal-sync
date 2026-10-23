@@ -1,0 +1,5 @@
+model,split,mse,n_states
+PCA,train,0.07869651168584824,605
+PCA,validation,0.0995541587471962,225
+Autoencoder,train,0.0748918280005455,605
+Autoencoder,validation,0.09108847379684448,225

@@ -1,0 +1,412 @@
+{
+  "nodes": [
+    {
+      "id": "EVT2_006",
+      "type": "candidate_event",
+      "label": "EVT2_006"
+    },
+    {
+      "id": "EVT2_006:window:2",
+      "type": "time_window",
+      "label": "window 2"
+    },
+    {
+      "id": "EVT2_006:window:3",
+      "type": "time_window",
+      "label": "window 3"
+    },
+    {
+      "id": "EVT2_006:window:4",
+      "type": "time_window",
+      "label": "window 4"
+    },
+    {
+      "id": "EVT2_006:window:5",
+      "type": "time_window",
+      "label": "window 5"
+    },
+    {
+      "id": "EVT2_006:window:6",
+      "type": "time_window",
+      "label": "window 6"
+    },
+    {
+      "id": "EVT2_006:state:2:Q_3648_23040010011010",
+      "type": "grid_state",
+      "label": "Q_3648_23040010011010"
+    },
+    {
+      "id": "EVT2_006:state:3:Q_3648_23040010011000",
+      "type": "grid_state",
+      "label": "Q_3648_23040010011000"
+    },
+    {
+      "id": "EVT2_006:state:3:Q_3648_23040010011010",
+      "type": "grid_state",
+      "label": "Q_3648_23040010011010"
+    },
+    {
+      "id": "EVT2_006:state:4:Q_3648_23040010011000",
+      "type": "grid_state",
+      "label": "Q_3648_23040010011000"
+    },
+    {
+      "id": "EVT2_006:state:5:Q_3648_23040010011000",
+      "type": "grid_state",
+      "label": "Q_3648_23040010011000"
+    },
+    {
+      "id": "EVT2_006:state:5:Q_3648_23040010011010",
+      "type": "grid_state",
+      "label": "Q_3648_23040010011010"
+    },
+    {
+      "id": "EVT2_006:state:6:Q_3648_23040010011000",
+      "type": "grid_state",
+      "label": "Q_3648_23040010011000"
+    },
+    {
+      "id": "EVT2_001",
+      "type": "candidate_event",
+      "label": "EVT2_001"
+    },
+    {
+      "id": "EVT2_001:window:1",
+      "type": "time_window",
+      "label": "window 1"
+    },
+    {
+      "id": "EVT2_001:window:2",
+      "type": "time_window",
+      "label": "window 2"
+    },
+    {
+      "id": "EVT2_001:window:3",
+      "type": "time_window",
+      "label": "window 3"
+    },
+    {
+      "id": "EVT2_001:window:4",
+      "type": "time_window",
+      "label": "window 4"
+    },
+    {
+      "id": "EVT2_001:state:1:Q_3712_21760101110101",
+      "type": "grid_state",
+      "label": "Q_3712_21760101110101"
+    },
+    {
+      "id": "EVT2_001:state:2:Q_3712_21760101110101",
+      "type": "grid_state",
+      "label": "Q_3712_21760101110101"
+    },
+    {
+      "id": "EVT2_001:state:3:Q_3712_21760101110101",
+      "type": "grid_state",
+      "label": "Q_3712_21760101110101"
+    },
+    {
+      "id": "EVT2_001:state:4:Q_3712_21760101110101",
+      "type": "grid_state",
+      "label": "Q_3712_21760101110101"
+    },
+    {
+      "id": "EVT2_001:state:4:Q_3712_2240000110",
+      "type": "grid_state",
+      "label": "Q_3712_2240000110"
+    },
+    {
+      "id": "EVT2_034",
+      "type": "candidate_event",
+      "label": "EVT2_034"
+    },
+    {
+      "id": "EVT2_034:window:9",
+      "type": "time_window",
+      "label": "window 9"
+    },
+    {
+      "id": "EVT2_034:window:10",
+      "type": "time_window",
+      "label": "window 10"
+    },
+    {
+      "id": "EVT2_034:window:11",
+      "type": "time_window",
+      "label": "window 11"
+    },
+    {
+      "id": "EVT2_034:state:9:Q_3712_21760101110101",
+      "type": "grid_state",
+      "label": "Q_3712_21760101110101"
+    },
+    {
+      "id": "EVT2_034:state:10:Q_3712_21760101110101",
+      "type": "grid_state",
+      "label": "Q_3712_21760101110101"
+    },
+    {
+      "id": "EVT2_034:state:11:Q_3712_21760101110101",
+      "type": "grid_state",
+      "label": "Q_3712_21760101110101"
+    }
+  ],
+  "edges": [
+    {
+      "source": "EVT2_006",
+      "target": "EVT2_006:window:2",
+      "relation": "HAS_OBSERVATION_WINDOW"
+    },
+    {
+      "source": "EVT2_006",
+      "target": "EVT2_006:window:3",
+      "relation": "HAS_OBSERVATION_WINDOW"
+    },
+    {
+      "source": "EVT2_006",
+      "target": "EVT2_006:window:4",
+      "relation": "HAS_OBSERVATION_WINDOW"
+    },
+    {
+      "source": "EVT2_006",
+      "target": "EVT2_006:window:5",
+      "relation": "HAS_OBSERVATION_WINDOW"
+    },
+    {
+      "source": "EVT2_006",
+      "target": "EVT2_006:window:6",
+      "relation": "HAS_OBSERVATION_WINDOW"
+    },
+    {
+      "source": "EVT2_006:window:2",
+      "target": "EVT2_006:window:3",
+      "relation": "PRECEDES_OBSERVED_WINDOW"
+    },
+    {
+      "source": "EVT2_006:window:3",
+      "target": "EVT2_006:window:4",
+      "relation": "PRECEDES_OBSERVED_WINDOW"
+    },
+    {
+      "source": "EVT2_006:window:4",
+      "target": "EVT2_006:window:5",
+      "relation": "PRECEDES_OBSERVED_WINDOW"
+    },
+    {
+      "source": "EVT2_006:window:5",
+      "target": "EVT2_006:window:6",
+      "relation": "PRECEDES_OBSERVED_WINDOW"
+    },
+    {
+      "source": "EVT2_006:window:2",
+      "target": "EVT2_006:state:2:Q_3648_23040010011010",
+      "relation": "CONTAINS_ANOMALOUS_STATE"
+    },
+    {
+      "source": "EVT2_006",
+      "target": "EVT2_006:state:2:Q_3648_23040010011010",
+      "relation": "SUPPORTED_BY_STATE"
+    },
+    {
+      "source": "EVT2_006:window:3",
+      "target": "EVT2_006:state:3:Q_3648_23040010011000",
+      "relation": "CONTAINS_ANOMALOUS_STATE"
+    },
+    {
+      "source": "EVT2_006",
+      "target": "EVT2_006:state:3:Q_3648_23040010011000",
+      "relation": "SUPPORTED_BY_STATE"
+    },
+    {
+      "source": "EVT2_006:window:3",
+      "target": "EVT2_006:state:3:Q_3648_23040010011010",
+      "relation": "CONTAINS_ANOMALOUS_STATE"
+    },
+    {
+      "source": "EVT2_006",
+      "target": "EVT2_006:state:3:Q_3648_23040010011010",
+      "relation": "SUPPORTED_BY_STATE"
+    },
+    {
+      "source": "EVT2_006:window:4",
+      "target": "EVT2_006:state:4:Q_3648_23040010011000",
+      "relation": "CONTAINS_ANOMALOUS_STATE"
+    },
+    {
+      "source": "EVT2_006",
+      "target": "EVT2_006:state:4:Q_3648_23040010011000",
+      "relation": "SUPPORTED_BY_STATE"
+    },
+    {
+      "source": "EVT2_006:window:5",
+      "target": "EVT2_006:state:5:Q_3648_23040010011000",
+      "relation": "CONTAINS_ANOMALOUS_STATE"
+    },
+    {
+      "source": "EVT2_006",
+      "target": "EVT2_006:state:5:Q_3648_23040010011000",
+      "relation": "SUPPORTED_BY_STATE"
+    },
+    {
+      "source": "EVT2_006:window:5",
+      "target": "EVT2_006:state:5:Q_3648_23040010011010",
+      "relation": "CONTAINS_ANOMALOUS_STATE"
+    },
+    {
+      "source": "EVT2_006",
+      "target": "EVT2_006:state:5:Q_3648_23040010011010",
+      "relation": "SUPPORTED_BY_STATE"
+    },
+    {
+      "source": "EVT2_006:window:6",
+      "target": "EVT2_006:state:6:Q_3648_23040010011000",
+      "relation": "CONTAINS_ANOMALOUS_STATE"
+    },
+    {
+      "source": "EVT2_006",
+      "target": "EVT2_006:state:6:Q_3648_23040010011000",
+      "relation": "SUPPORTED_BY_STATE"
+    },
+    {
+      "source": "EVT2_001",
+      "target": "EVT2_001:window:1",
+      "relation": "HAS_OBSERVATION_WINDOW"
+    },
+    {
+      "source": "EVT2_001",
+      "target": "EVT2_001:window:2",
+      "relation": "HAS_OBSERVATION_WINDOW"
+    },
+    {
+      "source": "EVT2_001",
+      "target": "EVT2_001:window:3",
+      "relation": "HAS_OBSERVATION_WINDOW"
+    },
+    {
+      "source": "EVT2_001",
+      "target": "EVT2_001:window:4",
+      "relation": "HAS_OBSERVATION_WINDOW"
+    },
+    {
+      "source": "EVT2_001:window:1",
+      "target": "EVT2_001:window:2",
+      "relation": "PRECEDES_OBSERVED_WINDOW"
+    },
+    {
+      "source": "EVT2_001:window:2",
+      "target": "EVT2_001:window:3",
+      "relation": "PRECEDES_OBSERVED_WINDOW"
+    },
+    {
+      "source": "EVT2_001:window:3",
+      "target": "EVT2_001:window:4",
+      "relation": "PRECEDES_OBSERVED_WINDOW"
+    },
+    {
+      "source": "EVT2_001:window:1",
+      "target": "EVT2_001:state:1:Q_3712_21760101110101",
+      "relation": "CONTAINS_ANOMALOUS_STATE"
+    },
+    {
+      "source": "EVT2_001",
+      "target": "EVT2_001:state:1:Q_3712_21760101110101",
+      "relation": "SUPPORTED_BY_STATE"
+    },
+    {
+      "source": "EVT2_001:window:2",
+      "target": "EVT2_001:state:2:Q_3712_21760101110101",
+      "relation": "CONTAINS_ANOMALOUS_STATE"
+    },
+    {
+      "source": "EVT2_001",
+      "target": "EVT2_001:state:2:Q_3712_21760101110101",
+      "relation": "SUPPORTED_BY_STATE"
+    },
+    {
+      "source": "EVT2_001:window:3",
+      "target": "EVT2_001:state:3:Q_3712_21760101110101",
+      "relation": "CONTAINS_ANOMALOUS_STATE"
+    },
+    {
+      "source": "EVT2_001",
+      "target": "EVT2_001:state:3:Q_3712_21760101110101",
+      "relation": "SUPPORTED_BY_STATE"
+    },
+    {
+      "source": "EVT2_001:window:4",
+      "target": "EVT2_001:state:4:Q_3712_21760101110101",
+      "relation": "CONTAINS_ANOMALOUS_STATE"
+    },
+    {
+      "source": "EVT2_001",
+      "target": "EVT2_001:state:4:Q_3712_21760101110101",
+      "relation": "SUPPORTED_BY_STATE"
+    },
+    {
+      "source": "EVT2_001:window:4",
+      "target": "EVT2_001:state:4:Q_3712_2240000110",
+      "relation": "CONTAINS_ANOMALOUS_STATE"
+    },
+    {
+      "source": "EVT2_001",
+      "target": "EVT2_001:state:4:Q_3712_2240000110",
+      "relation": "SUPPORTED_BY_STATE"
+    },
+    {
+      "source": "EVT2_034",
+      "target": "EVT2_034:window:9",
+      "relation": "HAS_OBSERVATION_WINDOW"
+    },
+    {
+      "source": "EVT2_034",
+      "target": "EVT2_034:window:10",
+      "relation": "HAS_OBSERVATION_WINDOW"
+    },
+    {
+      "source": "EVT2_034",
+      "target": "EVT2_034:window:11",
+      "relation": "HAS_OBSERVATION_WINDOW"
+    },
+    {
+      "source": "EVT2_034:window:9",
+      "target": "EVT2_034:window:10",
+      "relation": "PRECEDES_OBSERVED_WINDOW"
+    },
+    {
+      "source": "EVT2_034:window:10",
+      "target": "EVT2_034:window:11",
+      "relation": "PRECEDES_OBSERVED_WINDOW"
+    },
+    {
+      "source": "EVT2_034:window:9",
+      "target": "EVT2_034:state:9:Q_3712_21760101110101",
+      "relation": "CONTAINS_ANOMALOUS_STATE"
+    },
+    {
+      "source": "EVT2_034",
+      "target": "EVT2_034:state:9:Q_3712_21760101110101",
+      "relation": "SUPPORTED_BY_STATE"
+    },
+    {
+      "source": "EVT2_034:window:10",
+      "target": "EVT2_034:state:10:Q_3712_21760101110101",
+      "relation": "CONTAINS_ANOMALOUS_STATE"
+    },
+    {
+      "source": "EVT2_034",
+      "target": "EVT2_034:state:10:Q_3712_21760101110101",
+      "relation": "SUPPORTED_BY_STATE"
+    },
+    {
+      "source": "EVT2_034:window:11",
+      "target": "EVT2_034:state:11:Q_3712_21760101110101",
+      "relation": "CONTAINS_ANOMALOUS_STATE"
+    },
+    {
+      "source": "EVT2_034",
+      "target": "EVT2_034:state:11:Q_3712_21760101110101",
+      "relation": "SUPPORTED_BY_STATE"
+    }
+  ],
+  "disclaimer": "Temporal/spatial association only; no causal event inference."
+}

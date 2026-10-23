@@ -1,0 +1,10 @@
+{
+  "best_epoch": 150,
+  "best_validation_mse": 0.09108847379684448,
+  "device": "cuda",
+  "train_rows": 605,
+  "validation_rows": 225,
+  "input_dim": 18,
+  "latent_dim": 8,
+  "pca_train_explained_variance": 0.8910355567932129
+}

@@ -1,0 +1,224 @@
+{
+  "method": "Relative prioritization among sustained traffic candidates only",
+  "weights": {
+    "anomaly_strength": 0.35,
+    "duration": 0.25,
+    "observation_support": 0.2,
+    "cross_branch_support": 0.2
+  },
+  "score_is_probability": false,
+  "score_is_calibrated_risk": false,
+  "time_window_seconds": 2,
+  "events": [
+    {
+      "event_id": "EVT2_006",
+      "relative_priority_score": 93.33,
+      "evidence_summary": {
+        "event_id": "EVT2_006",
+        "start_window": 2,
+        "end_window": 6,
+        "window_span": 5,
+        "state_count": 7,
+        "grid_count": 2,
+        "observation_sum": 112,
+        "both_branch_states": 3,
+        "both_branch_ratio": 0.42857142857142855,
+        "weighted_mean_speed_mps": 4.564428013201655,
+        "mean_raw_anomaly_score": 0.6073458027764931,
+        "mean_ae_anomaly_score": 0.5639291233360095,
+        "vehicle_observations": 50,
+        "infrastructure_observations": 62,
+        "centroid_x": 3669.584406204919,
+        "centroid_y": 2313.2334750871073,
+        "spatial_x_min": 3669.224773668909,
+        "spatial_x_max": 3670.3784380003003,
+        "spatial_y_min": 2312.781630301162,
+        "spatial_y_max": 2313.590376979658,
+        "relative_priority_score": 93.33333333333333
+      },
+      "timeline": [
+        {
+          "event_id": "EVT2_006",
+          "window_id": 2,
+          "state_count": 1.0,
+          "observation_count": 7.0,
+          "mean_speed_mps": 5.4198939942482065,
+          "both_branch_states": 0.0,
+          "vehicle_observations": 5.0,
+          "infrastructure_observations": 2.0
+        },
+        {
+          "event_id": "EVT2_006",
+          "window_id": 3,
+          "state_count": 2.0,
+          "observation_count": 26.0,
+          "mean_speed_mps": 6.00452187927361,
+          "both_branch_states": 1.0,
+          "vehicle_observations": 9.0,
+          "infrastructure_observations": 17.0
+        },
+        {
+          "event_id": "EVT2_006",
+          "window_id": 4,
+          "state_count": 1.0,
+          "observation_count": 30.0,
+          "mean_speed_mps": 3.3679662288881733,
+          "both_branch_states": 1.0,
+          "vehicle_observations": 15.0,
+          "infrastructure_observations": 15.0
+        },
+        {
+          "event_id": "EVT2_006",
+          "window_id": 5,
+          "state_count": 2.0,
+          "observation_count": 34.0,
+          "mean_speed_mps": 4.189639149591232,
+          "both_branch_states": 1.0,
+          "vehicle_observations": 18.0,
+          "infrastructure_observations": 16.0
+        },
+        {
+          "event_id": "EVT2_006",
+          "window_id": 6,
+          "state_count": 1.0,
+          "observation_count": 15.0,
+          "mean_speed_mps": 4.911492846999134,
+          "both_branch_states": 0.0,
+          "vehicle_observations": 3.0,
+          "infrastructure_observations": 12.0
+        }
+      ],
+      "interpretation": "Spatiotemporally persistent anomalous traffic-state pattern; not a confirmed incident."
+    },
+    {
+      "event_id": "EVT2_001",
+      "relative_priority_score": 73.33,
+      "evidence_summary": {
+        "event_id": "EVT2_001",
+        "start_window": 1,
+        "end_window": 4,
+        "window_span": 4,
+        "state_count": 5,
+        "grid_count": 2,
+        "observation_sum": 115,
+        "both_branch_states": 2,
+        "both_branch_ratio": 0.4,
+        "weighted_mean_speed_mps": 3.0883329459870823,
+        "mean_raw_anomaly_score": 0.5984587484355058,
+        "mean_ae_anomaly_score": 0.5710148978541368,
+        "vehicle_observations": 31,
+        "infrastructure_observations": 84,
+        "centroid_x": 3721.3024159401825,
+        "centroid_y": 2241.169891410069,
+        "spatial_x_min": 3721.078125883189,
+        "spatial_x_max": 3721.4731415655356,
+        "spatial_y_min": 2238.6885645468888,
+        "spatial_y_max": 2258.716639758856,
+        "relative_priority_score": 73.33333333333333
+      },
+      "timeline": [
+        {
+          "event_id": "EVT2_001",
+          "window_id": 1,
+          "state_count": 1.0,
+          "observation_count": 33.0,
+          "mean_speed_mps": 1.5921223306699974,
+          "both_branch_states": 1.0,
+          "vehicle_observations": 15.0,
+          "infrastructure_observations": 18.0
+        },
+        {
+          "event_id": "EVT2_001",
+          "window_id": 2,
+          "state_count": 1.0,
+          "observation_count": 32.0,
+          "mean_speed_mps": 2.3504526965967667,
+          "both_branch_states": 1.0,
+          "vehicle_observations": 16.0,
+          "infrastructure_observations": 16.0
+        },
+        {
+          "event_id": "EVT2_001",
+          "window_id": 3,
+          "state_count": 1.0,
+          "observation_count": 19.0,
+          "mean_speed_mps": 3.0916994572280805,
+          "both_branch_states": 0.0,
+          "vehicle_observations": 0.0,
+          "infrastructure_observations": 19.0
+        },
+        {
+          "event_id": "EVT2_001",
+          "window_id": 4,
+          "state_count": 2.0,
+          "observation_count": 31.0,
+          "mean_speed_mps": 5.4406927709024036,
+          "both_branch_states": 0.0,
+          "vehicle_observations": 0.0,
+          "infrastructure_observations": 31.0
+        }
+      ],
+      "interpretation": "Spatiotemporally persistent anomalous traffic-state pattern; not a confirmed incident."
+    },
+    {
+      "event_id": "EVT2_034",
+      "relative_priority_score": 33.33,
+      "evidence_summary": {
+        "event_id": "EVT2_034",
+        "start_window": 9,
+        "end_window": 11,
+        "window_span": 3,
+        "state_count": 3,
+        "grid_count": 1,
+        "observation_sum": 52,
+        "both_branch_states": 0,
+        "both_branch_ratio": 0.0,
+        "weighted_mean_speed_mps": 3.5312331965270265,
+        "mean_raw_anomaly_score": 0.5678167523183452,
+        "mean_ae_anomaly_score": 0.5199103782448139,
+        "vehicle_observations": 0,
+        "infrastructure_observations": 52,
+        "centroid_x": 3721.2097808172202,
+        "centroid_y": 2239.361147905079,
+        "spatial_x_min": 3721.137499342283,
+        "spatial_x_max": 3721.262116474164,
+        "spatial_y_min": 2239.342569380038,
+        "spatial_y_max": 2239.391253953759,
+        "relative_priority_score": 33.33333333333333
+      },
+      "timeline": [
+        {
+          "event_id": "EVT2_034",
+          "window_id": 9,
+          "state_count": 1.0,
+          "observation_count": 16.0,
+          "mean_speed_mps": 2.5536084790225213,
+          "both_branch_states": 0.0,
+          "vehicle_observations": 0.0,
+          "infrastructure_observations": 16.0
+        },
+        {
+          "event_id": "EVT2_034",
+          "window_id": 10,
+          "state_count": 1.0,
+          "observation_count": 18.0,
+          "mean_speed_mps": 3.2995284468324813,
+          "both_branch_states": 0.0,
+          "vehicle_observations": 0.0,
+          "infrastructure_observations": 18.0
+        },
+        {
+          "event_id": "EVT2_034",
+          "window_id": 11,
+          "state_count": 1.0,
+          "observation_count": 18.0,
+          "mean_speed_mps": 4.631937695114465,
+          "both_branch_states": 0.0,
+          "vehicle_observations": 0.0,
+          "infrastructure_observations": 18.0
+        }
+      ],
+      "interpretation": "Spatiotemporally persistent anomalous traffic-state pattern; not a confirmed incident."
+    }
+  ]
+}
