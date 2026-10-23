@@ -1,0 +1,17 @@
+[theme]
+base = "dark"
+primaryColor = "#38BDF8"
+backgroundColor = "#080F1F"
+secondaryBackgroundColor = "#15243B"
+textColor = "#F1F5F9"
+linkColor = "#38BDF8"
+borderColor = "#2B405E"
+showWidgetBorder = true
+baseRadius = "medium"
+paddingTop = "2.5rem"
+paddingBottom = "2rem"
+chartCategoricalColors = ["#38BDF8", "#FB923C", "#C084FC", "#FACC15", "#94A3B8"]
+chartSequentialColors = ["#15243B", "#164E63", "#0EA5E9", "#C084FC", "#FB923C"]
+
+[server]
+headless = true

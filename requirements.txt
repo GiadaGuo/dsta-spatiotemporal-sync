@@ -1,0 +1,10 @@
+numpy
+pandas
+scipy
+pyproj
+h3
+matplotlib
+plotly
+pyarrow
+pytest
+streamlit
