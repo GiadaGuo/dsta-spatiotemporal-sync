@@ -4,7 +4,6 @@ __pycache__/
 .DS_Store
 
 data/raw/
-data/processed/
 outputs/
 
 *.pyc

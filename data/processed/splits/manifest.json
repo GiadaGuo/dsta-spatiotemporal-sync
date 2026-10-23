@@ -1,0 +1,22 @@
+{
+  "roi": [
+    3584.0,
+    2112.0,
+    3968.0,
+    2496.0
+  ],
+  "train_valid_boundary_us": 1626167064421541,
+  "valid_test_boundary_us": 1626167068205006,
+  "train": {
+    "rows": 6042,
+    "outside_roi": 0
+  },
+  "valid": {
+    "rows": 1050,
+    "outside_roi": 0
+  },
+  "test": {
+    "rows": 1235,
+    "outside_roi": 0
+  }
+}
